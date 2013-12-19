@@ -73,10 +73,10 @@
 					if ((val + w) >= win_width) {
 						val = val - w;
 					}
+					endStyle['left']=GetRandomNum(-50,win_width+50)+'px';
 					$itm.css({
 						left: val + 'px'
 					})
-					endStyle['left']=GetRandomNum(-50,win_width+50)+'px';
 					.animate(endStyle, config.duration);
 				}
 
