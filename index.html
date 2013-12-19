@@ -49,6 +49,7 @@
 						color: '#FFF'
 					},
 					endStyle = {
+						left:0px,
 						top: win_height + 50 + 'px',
 						opacity: 0
 					};
@@ -75,7 +76,7 @@
 					$itm.css({
 						left: val + 'px'
 					})
-					endStyle['left']=GetRandomNum(-50,win_width)+'px',
+					endStyle.left=GetRandomNum(-50,win_width+50)+'px';
 					.animate(endStyle, config.duration);
 				}
 
