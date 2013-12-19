@@ -16,12 +16,6 @@
      <!--[if (gt IE 9)|!(IE)]><!-->
      <script src="js/jquery.mobile.customized.min.js"></script>
 	 <script type="text/javascript">
-		function GetRandomNum(Min,Max)
-		{   
-		var Range = Max - Min;   
-		var Rand = Math.random();   
-		return(Min + Math.round(Rand * Range));   
-		}   
 		$.extend({
 		// 雪花飘落组件
 			snowflake: function(options) {
@@ -61,6 +55,12 @@
 				$(flakeHtmlStr).appendTo('body');
 				$items = $('.snow-flake').css(initStyle).wrapAll('<div id="snowflake-box"></div>');
 
+				function GetRandomNum(Min,Max)
+				{   
+				var Range = Max - Min;   
+				var Rand = Math.random();   
+				return(Min + Math.round(Rand * Range));   
+				}   
 				// 处理单个雪花
 				function handleItem(idx) {
 					var $itm = $items.eq(idx).css(initStyle),
@@ -76,7 +76,7 @@
 					$itm.css({
 						left: val + 'px'
 					})
-					endStyle.left=GetRandomNum(-50,win_width+50)+'px';
+					endStyle['left']=GetRandomNum(-50,win_width+50)+'px';
 					.animate(endStyle, config.duration);
 				}
 
@@ -101,7 +101,7 @@
 	 </script>
 	 
      <!--<![endif]-->
-     <script>
+     <script type="text/javascript">
       $(document).ready(function(){
           jQuery('#camera_wrap').camera({
             loader: false,
@@ -114,7 +114,7 @@
             fx: 'mosaic'
           });
 		  
-		$.snowflake(); // 调用 
+	$.snowflake(); // 调用 
     });
 	
      </script>
