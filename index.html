@@ -21,7 +21,7 @@
 			snowflake: function(options) {
 				var flakeHtmlStr = '',
 					config = {
-						length: 26,     // 数量
+						length: 36,     // 数量
 						interval: 1000, // 雪花之间出现的时间间隔
 						duration: 24000 // 雪花的动画时间
 					};
@@ -43,6 +43,7 @@
 						color: '#FFF'
 					},
 					endStyle = {
+						left:win_width+'px',
 						top: win_height + 50 + 'px',
 						opacity: 0
 					};
