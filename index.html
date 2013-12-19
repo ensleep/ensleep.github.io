@@ -40,7 +40,9 @@
 						zIndex: 9999,
 						opacity: 1,
 						fontSize: 0,
-						color: '#FF6699'
+						color: '#FFF',
+						user-select:'none',
+						pointer-events:'none'
 					},
 					endStyle = {
 						left:'0px',
@@ -66,7 +68,7 @@
 					var $itm = $items.eq(idx).css(initStyle),
 						w, val;
 					$itm.css({
-						fontSize: 20 + Math.ceil(Math.random() * 30, 10) + 'px'
+						fontSize: 20 + Math.ceil(Math.random() * 50, 10) + 'px'
 					});
 					w = $itm.width();
 					val = Math.floor(Math.random() * win_width);
