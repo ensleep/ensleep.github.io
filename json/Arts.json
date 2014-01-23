@@ -1,0 +1,61 @@
+﻿{
+	"ArtArr":[
+		{
+			"title":"this is a title ",
+			"content":"this is the contents"
+		},
+		{
+			"title":"this is a title ",
+			"content":"this is the contents"
+		},
+		{
+			"title":"this is a title ",
+			"content":"this is the contents"
+		}
+	],
+	"MyWordArr":
+	[
+		{ 
+			"title":"逝者不死,必将再起,其势更烈",
+			"tip":"浴火不死者，逆世——", 
+			"content":"<p style='margin-top:8px'>What is dead may never die, but rises again, harder and stronger</p>"
+		}
+		,{ 
+			"title":"我们有能力去爱，那是对我们最美好的恩赐，却也是我们最深沉的悲哀",
+			"tip":"最大的苦难并非来源于饥饿，而是来源于那些我们独有的抽象", 
+			"content":"<p style='margin-top:8px'>Just like my love to you---deep,hard,and hopeness</p>"
+		}
+		,{ 
+			"title":"坠落，往往是从飞行开始的",
+			"tip":"好想放假啊~~", 
+			"content":"<p style='margin-top:8px'>最愚蠢的人通常也比嘲笑他们的家伙聪明。</p>"
+		}
+	]
+	,"MyNeed":
+	[
+			"我要减肥"
+			,"我要挣钱"
+			,"我要去远方"
+			,"我要能绘山弄水"
+			,"我要行走人世界边缘"
+			,"我要独立，抛弃耳塞"
+			,"我要有自己的世界"
+			,"我要成为星空下的武者"
+	]	
+	,"Word4Heart":{
+		"top":"&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;突然想起，那些被我们曾经想刻意忽略的、让我们羞羞涩涩的日子。在那些日子中，天总是蓝色的，我们从来不曾经怀疑，就像我们从来没有想过以后路还这么长，世界还这么大一样。我们沉浸在自己的小世界里面，这已经足够了，那是最美好的季节。", 
+		"body":"&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;我的记忆是很长的，长得连我的大脑也无法装下，只能存放在血液中，把这份悸传给我的后人，让他们知道，曾经，我年少的时候，曾经我懵懂的时候，有过这种感觉。<br/>而现在，我们再也不会因为茫然去看星空，我们的感觉不再放在星空上，而是放在看星空的我们自己的身上；我们看星空再也不是为了诉说，而是寻找，寻找以抚慰心中无由的空虚；我们不再为那些无法解释的神秘的星空而平静，而是想用它的容颜来迷惑自己。"
+	}
+	,"MyTimePic":[
+		{
+			"picname":"page2_img2.jpg",
+			"title" :"oh,my pics1", 
+			"desc":"guess who is this1"
+		},
+		{
+			"picname":"page2_img2.jpg",
+			"title" :"oh,my pics2", 
+			"desc":"guess who is this2"
+		}
+	]
+}

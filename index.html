@@ -58,11 +58,11 @@
 				$items = $('.snow-flake').css(initStyle).wrapAll('<div id="snowflake-box"></div>');
 
 				function GetRandomNum(Min,Max)
-				{
-				var Range = Max - Min;
-				var Rand = Math.random();
-				return(Min + Math.round(Rand * Range));
-				}
+				{   
+				var Range = Max - Min;   
+				var Rand = Math.random();   
+				return(Min + Math.round(Rand * Range));   
+				}   
 				// 处理单个雪花
 				function handleItem(idx) {
 					var $itm = $items.eq(idx).css(initStyle),
@@ -101,7 +101,7 @@
 		});
 
 	 </script>
-
+	 
      <!--<![endif]-->
      <script type="text/javascript">
       $(document).ready(function(){
@@ -115,10 +115,10 @@
             navigation: true,
             fx: 'mosaic'
           });
-
-	$.snowflake(); // 调用
+		  
+	$.snowflake(); // 调用 
     });
-
+	
      </script>
      <!--[if lt IE 8]>
        <div style=' clear: both; text-align:center; position: relative;'>
@@ -135,27 +135,27 @@
 </head>
 <body  class="page1">
 <!--==============================header=================================-->
- <header>
+ <header> 
   <div class="container_12">
-   <div class="grid_12">
-    <h1><a href="index.html"><img src="images/logo.png" alt="Boo House"></a> </h1>
+   <div class="grid_12"> 
+    <h1><a href="index.html"><img src="images/logo.png" alt="Boo House"/></a> </h1>
     <div class="menu_block">
 
-     <nav  class="" >
-      <ul class="sf-menu">
-         <li class="current"><a href="index.html">Home</a></li>
-         <li><a href="#" onclick="Warm()">Yes,It's Me</a></li>
-         <li><a href="#" onclick="Warm()">My Painter</a></li>
-         <li><a href="#" onclick="Warm()">Left Or Right</a></li>
-         <li><a href="#" onclick="Warm()">Follow Me</a></li>
-         <script type="text/javascript">
-              function Warm(){
-                   alert("对不起，还没完成呢,Sorry,I am dying to finish it!");
-              }
-         </script>
-       </ul>
-    </nav>
-
+        <nav class="">
+            <ul class="sf-menu">
+                <li class="current"><a href="index.html">Home</a></li>
+                <li><a href="#" onclick="Warm()">Yes,It's Me</a></li>
+                <li><a href="#" onclick="Warm()">My Painter</a></li>
+                <li><a href="leftorright.html">Left Or Right</a></li>
+                <li><a href="followme.html">Follow Me</a></li>
+                <script type="text/javascript">
+                    function Warm() {
+                        alert("对不起，还没完成呢,Sorry,I am dying to finish it!");
+                    }
+                </script>
+            </ul>
+        </nav>
+    
  <div class="clear"></div>
 </div>
 <div class="clear"></div>
@@ -189,7 +189,7 @@
 
 相比之下，也许真的是诗词更有价值，可惜的是就搞这个的真没战斗力，很容易被KO。
 
-对个人而言倒是真适合在两者间找个均衡，惟其如此，才能既不失了智慧，也不失了情趣。
+对个人而言倒是真适合在两者间找个均衡，惟其如此，才能既不失了智慧，也不失了情趣。 
       </div>
     </div>
     <div class="grid_4">
@@ -212,13 +212,13 @@
       </div>
     </div>
 
-
+    
   </div>
 </div>
 
 <!--==============================footer=================================-->
 
-<footer>
+<footer>    
   <div class="container_12">
     <div class="grid_12">
     <div class="socials">
