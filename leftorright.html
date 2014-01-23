@@ -13,7 +13,35 @@
      <script src="js/jquery.easing.1.3.js"></script>
 
      <script type="text/javascript">
+         var charr = ["　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　"
+, "　　　　　　　　　　　７７　　７７７　　　　　　　　　　　　　７７　　　　　　　７７　　　　　　　　　　　　７７　　　　　　　７７７　　　　　　　"
+, "　　　　　７７７７７７７７７　７７７　　　　　　　　　　　　　７７７　　　　　７７７７　　　　　　　　　　　７７７　　　　　　７７７７　　　　　　"
+, "　　　　　　　　　　７７７　　７７　　　　　７７　　　　　　　７７７　　　　　７７７　７７７　　　　　　　　７７７　　　　　　７７７　　　　　　　"
+, "　　　　　　　　　　７７７　　７７　　　　７７７７　　　　　　７７７　　　　７７７　　　７７７　　　　　　　７７７　　７７７７７７７７７７７７　　"
+, "　　　　　　　　　　７７７　　７７　　　７７７　　　　　　　　７７７　　７７７　　７７７７７７７　　　　　　７７７　　　　　　７７７　　　　　　　"
+, "　　　　　　　　　　７７７　　７７　　７７７　　　　　　７７７７７７７７７７７７７７　　　７７７　　　７７７７７７７７　　　　７７７７　　　　　　"
+, "　　　　　　７７７７７７７　　７７　７７７　　　　　　　７７７７７７７７　　　７７　　７７　７７　　　７７７７７７７７７　　７７７７７７７　　　　"
+, "　　　　　　７７７　７７７　　７７７７　　　　　　　　　７７７７７７７７　　７７７７　７７７　　　　　７７７７７７７７　　７７７　　　７７７　　　"
+, "　　　　　　７７　　　　　　　７７７　　　　　７７　　　７７７７７７７７　７７７　　　　　７７７　　　７７７７７７７７７７７　　　　　　７７７　　"
+, "　　　　　　７７　　　７７７７７７７７７７７７７７７　　７７７７７７７７　７７７７　　　　７７７　　　７７７７７７７７７７７７７７７７７７７７７７"
+, "　　　　　　７７　　　　　　　７７　７７　　　　　　　　７７７７７７７７７７　７７７　　　　７７　　　７７７７７７７７　　　　　　　　７７７　　　"
+, "　　　　　７７７７７７７７　　７７　７７　　　　　　　　７７７７７７７７７　７７７７７７７７７　　　　７７７７７７７７　７７７７７７７７７７　　　"
+, "　　　　　　７７　　７７　　　７７　７７　　　　　　　　７７７７７７７７　　７７　　　７７７　　　　　７７７７７７７７　７７　　７７７７７７　　　"
+, "　　　　　　　　　　７７　　　７７　　７７　　　　　　　７７７７７７７７　７７７７　　７７７　　　　　７７７７７７７７　７７　　７７７７７７　　　"
+, "　　　　　　　　　　７７　　　７７　　７７７　　　　　　７７７７７７７７７７　７７　　７７　　　　　　７７７７７７７７　７７　　７７７７７７　　　"
+, "　　　　　　　　　　７７　　　７７　　　７７７　　　　　７７７７７　７７７７　７７７７７７　　　　　　７７７７７　７７　７７７７７７７７７７　　　"
+, "　　　　　　　　　７７７　　　７７　　７７７７７　　　　　７７　　　　　　　　　７７７７　　　　　　　７７７　　　７７　７７　　７７７７７７　　　"
+, "　　　　　　　　　７７７　　　７７　７７７７７７７　　　　　　　　　　　　　　　７７７７　　　　　　　　　　　　　　　　７　　　　　　７７７　　　"
+, "　　　　　７７７　７７７　　　７７７７　　　７７７７７　　　　　　　　　　　７７７　７７７７　　　　　　　　　　　　　　　　　　　　　７７７　　　"
+, "　　　　　　７７７７７　　　７７７７　　　　　　　　　　　　　　　　　　７７７７　　　　７７７７７７　　　　　　　　　　　　　　７７７７７７　　　"
+, "　　　　　　　　７７　　　　　７７　　　　　　　　　　　　　　　　　７７７７　　　　　　　　７７　　　　　　　　　　　　　　　　　　７７７　　　　"
+, "　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　"];
          $(document).ready(function () {
+             if (window.console) {
+                 for (var i = 0; i < charr.length; i++) {
+                     console.log(charr[i]);
+                 }
+             }
              $.ajax({
                  url: "json/Arts.json",
                  type: "GET",
@@ -76,9 +104,9 @@
         <nav class="">
             <ul class="sf-menu">
                 <li><a href="index.html">Home</a></li>
-                <li class="current"><a href="yesitsme.html" onclick="Warm()">Yes,It's Me</a></liclass>
+                <li><a href="yesitsme.html">Yes,It's Me</a></li>
                 <li><a href="#" onclick="Warm()">My Painter</a></li>
-                <li><a href="leftorright.html">Left Or Right</a></li>
+                <li class="current"><a href="leftorright.html">Left Or Right</a></li>
                 <li><a href="followme.html">Follow Me</a></li>
             </ul>
         </nav>
