@@ -1,0 +1,1094 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+     <head>
+     <title>Left?...oR Right!</title>
+     <meta charset="utf-8">
+     <link rel="icon" href="images/favicon.ico">
+     <link rel="shortcut icon" href="images/favicon.ico" />
+     <link rel="stylesheet" href="css/style.css">
+     <script src="js/jquery.js"></script>
+     <script src="js/jquery-migrate-1.1.1.js"></script>
+     <script src="js/superfish.js"></script>
+     <script src="js/jquery.equalheights.js"></script>
+     <script src="js/jquery.easing.1.3.js"></script>
+
+     <script type="text/javascript">
+         var charr = ["　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　"
+, "　　　　　　　　　　　７７　　７７７　　　　　　　　　　　　　７７　　　　　　　７７　　　　　　　　　　　　７７　　　　　　　７７７　　　　　　　"
+, "　　　　　７７７７７７７７７　７７７　　　　　　　　　　　　　７７７　　　　　７７７７　　　　　　　　　　　７７７　　　　　　７７７７　　　　　　"
+, "　　　　　　　　　　７７７　　７７　　　　　７７　　　　　　　７７７　　　　　７７７　７７７　　　　　　　　７７７　　　　　　７７７　　　　　　　"
+, "　　　　　　　　　　７７７　　７７　　　　７７７７　　　　　　７７７　　　　７７７　　　７７７　　　　　　　７７７　　７７７７７７７７７７７７　　"
+, "　　　　　　　　　　７７７　　７７　　　７７７　　　　　　　　７７７　　７７７　　７７７７７７７　　　　　　７７７　　　　　　７７７　　　　　　　"
+, "　　　　　　　　　　７７７　　７７　　７７７　　　　　　７７７７７７７７７７７７７７　　　７７７　　　７７７７７７７７　　　　７７７７　　　　　　"
+, "　　　　　　７７７７７７７　　７７　７７７　　　　　　　７７７７７７７７　　　７７　　７７　７７　　　７７７７７７７７７　　７７７７７７７　　　　"
+, "　　　　　　７７７　７７７　　７７７７　　　　　　　　　７７７７７７７７　　７７７７　７７７　　　　　７７７７７７７７　　７７７　　　７７７　　　"
+, "　　　　　　７７　　　　　　　７７７　　　　　７７　　　７７７７７７７７　７７７　　　　　７７７　　　７７７７７７７７７７７　　　　　　７７７　　"
+, "　　　　　　７７　　　７７７７７７７７７７７７７７７　　７７７７７７７７　７７７７　　　　７７７　　　７７７７７７７７７７７７７７７７７７７７７７"
+, "　　　　　　７７　　　　　　　７７　７７　　　　　　　　７７７７７７７７７７　７７７　　　　７７　　　７７７７７７７７　　　　　　　　７７７　　　"
+, "　　　　　７７７７７７７７　　７７　７７　　　　　　　　７７７７７７７７７　７７７７７７７７７　　　　７７７７７７７７　７７７７７７７７７７　　　"
+, "　　　　　　７７　　７７　　　７７　７７　　　　　　　　７７７７７７７７　　７７　　　７７７　　　　　７７７７７７７７　７７　　７７７７７７　　　"
+, "　　　　　　　　　　７７　　　７７　　７７　　　　　　　７７７７７７７７　７７７７　　７７７　　　　　７７７７７７７７　７７　　７７７７７７　　　"
+, "　　　　　　　　　　７７　　　７７　　７７７　　　　　　７７７７７７７７７７　７７　　７７　　　　　　７７７７７７７７　７７　　７７７７７７　　　"
+, "　　　　　　　　　　７７　　　７７　　　７７７　　　　　７７７７７　７７７７　７７７７７７　　　　　　７７７７７　７７　７７７７７７７７７７　　　"
+, "　　　　　　　　　７７７　　　７７　　７７７７７　　　　　７７　　　　　　　　　７７７７　　　　　　　７７７　　　７７　７７　　７７７７７７　　　"
+, "　　　　　　　　　７７７　　　７７　７７７７７７７　　　　　　　　　　　　　　　７７７７　　　　　　　　　　　　　　　　７　　　　　　７７７　　　"
+, "　　　　　７７７　７７７　　　７７７７　　　７７７７７　　　　　　　　　　　７７７　７７７７　　　　　　　　　　　　　　　　　　　　　７７７　　　"
+, "　　　　　　７７７７７　　　７７７７　　　　　　　　　　　　　　　　　　７７７７　　　　７７７７７７　　　　　　　　　　　　　　７７７７７７　　　"
+, "　　　　　　　　７７　　　　　７７　　　　　　　　　　　　　　　　　７７７７　　　　　　　　７７　　　　　　　　　　　　　　　　　　７７７　　　　"
+, "　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　"];
+         $(document).ready(function () {
+             if (window.console) {
+                 for (var i = 0; i < charr.length; i++) {
+                     console.log(charr[i]);
+                 }
+             }
+             $(window).scroll(function () {
+                 var $menu = $("#menu");
+                 var vtop = $(document).scrollTop(); //滚动条到浏览器窗口顶部的距离
+                $menu.css("top", (vtop + 100) + "px");
+             });
+             var $menu_img=$("#menu img");
+             $menu_img.hover(function () {
+                 $menu_img.css({ "width": "82", "height": "82" }, 70);
+                 $(this).animate({ "width": "100", "height": "100" }, 70);
+             }, function () {
+                 $menu_img.animate({ "width": "82", "height": "82" }, 70);
+             });
+         });
+
+     </script>
+     <!--[if lt IE 8]>
+       <div style=' clear: both; text-align:center; position: relative;'>
+         <a href="http://windows.microsoft.com/en-US/internet-explorer/products/ie/home?ocid=ie6_countdown_bannercode">
+           <img src="http://storage.ie6countdown.com/assets/100/images/banners/warning_bar_0000_us.jpg" border="0" height="42" width="820" alt="You are using an outdated browser. For a faster, safer browsing experience, upgrade for free today." />
+         </a>
+      </div>
+    <![endif]-->
+    <!--[if lt IE 9]>
+      <script src="js/html5shiv.js"></script>
+      <link rel="stylesheet" media="screen" href="css/ie.css">
+
+    <![endif]-->
+     </head>
+     <body  class="">
+<!--==============================header=================================-->
+ <header> 
+  <div class="container_12">
+   <div class="grid_12"> 
+    <h1><a href="index.html"><img src="images/logo.png" alt="Boo House"/></a> </h1>
+    <div class="menu_block">
+
+        <nav class="">
+            <ul class="sf-menu">
+                <li><a href="index.html">Home</a></li>
+                <li class ="current"><a href="yesitsme.html">Yes,It's Me</a></li>
+                <li><a href="#" onclick="Warm()">My Painter</a></li>
+                <li ><a href="leftorright.html">Left Or Right</a></li>
+                <li><a href="followme.html">Follow Me</a></li>
+            </ul>
+        </nav>
+    
+ <div class="clear"></div>
+</div>
+<div class="clear"></div>
+          </div>
+      </div>
+</header>
+
+<!--==============================Content=================================-->
+
+<div class="content"><div class="ic"></div>
+  <div class="container_12">
+      <div class="grid_2">
+          <div id="menu" style="position:relative;top:50px;left:0px;height:200px;width:200px;float:left;display:none;">
+              <div style="height:100px;width:200px">
+                  <img src="images/wodejianli.png" width="82" height="82" />
+                  <img src="images/wodedaxue.png" width="82" height="82" />
+              </div>
+              <div style="height:100px;width:200px">
+                  <img src="images/zairenjian.png" width="82" height="82" />
+                  <img src="images/wodemengxiang.png" width="82" height="82" />
+                </div>
+              </div>
+
+          
+      </div>
+      <div class="grid_1" style="height:10px;"></div>
+      <div class="grid_8">         
+          <div id="jianli" style="color:black;">
+                  <style>
+                      table {
+                          FONT-SIZE: 12px;
+                          LINE-HEIGHT: 150%;
+                          FONT-FAMILY: '宋体';
+                      }
+                      tbody {
+                          padding-left: 20px;
+                      }
+                      tr{
+                          margin-left:20px;
+
+                      }
+                      td {
+                          FONT-SIZE: 12px;
+                          LINE-HEIGHT: 150%;
+                          FONT-FAMILY: '宋体';
+                          text-align: left;
+                          padding-left: 20px;
+                      }
+
+                      P {
+                          FONT-SIZE: 12px;
+                          LINE-HEIGHT: 150%;
+                          FONT-FAMILY: '宋体';
+                      }
+
+                      .blue {
+                          COLOR: #256fb8;
+                      }
+
+                      A:link {
+                          COLOR: #296ebb;
+                          TEXT-DECORATION: none;
+                      }
+
+                      A:visited {
+                          COLOR: black;
+                          TEXT-DECORATION: none;
+                      }
+
+                      .cvtitle {
+                          font-weight: 700;
+                          color: #256fb8;
+                          font-size: 14px;
+                          padding-top: 5px;
+                      }
+
+                      .blue1 {
+                          COLOR: #ff7400;
+                      }
+
+                      .blue1 {
+                          color: #256fb8;
+                      }
+
+                      .blue2 {
+                          COLOR: #ff7400;
+                      }
+
+                      .font14 {
+                          font-size: 14px;
+                      }
+
+                      .graybutton {
+                          color: #676767;
+                      }
+
+                      .v_table001 {
+                          width: 710px;
+                          line-height: 22px;
+                          margin: 0 0 10px 10px;
+                          padding: 0px;
+                          text-align: left;
+                      }
+                  </style>
+                  <table width="778" border="0" cellpadding="0" align="center">
+                      <tr>
+                          <td>
+                              <table style="BORDER-TOP-WIDTH: 0px; BORDER-LEFT-WIDTH: 0px; BORDER-BOTTOM-WIDTH: 0px; MARGIN: 0px auto; BORDER-RIGHT-WIDTH: 0px" cellspacing="0" cellpadding="10" width="760" align="center" border="0">
+                                  <tbody>
+                                      <tr>
+                                          <td valign="top" colspan="2">
+                                              <table cellspacing="0" cellpadding="0" width="760" align="center" border="0">
+                                                  <tbody>
+                                                      <tr>
+                                                          <td valign="top">
+                                                              <table style="PADDING-RIGHT: 0px; PADDING-LEFT: 8px; PADDING-BOTTOM: 0px; MARGIN: 8px auto;  LINE-HEIGHT: 22px; PADDING-TOP: 8px; " cellspacing="0" cellpadding="0" width="97%" align="center" border="0">
+                                                                  <tbody>
+                                                                      <tr>
+                                                                          <td style="BORDER-BOTTOM: #88b4e0 1px dashed" height="30">
+                                                                              <span style="FLOAT: right">
+                                                                                  
+                                                                              </span>
+                                                                              <span style="FONT-SIZE: 25px; LINE-HEIGHT: 30px; HEIGHT: 30px">
+                                                                                  <strong>张峻崎</strong>
+                                                                              </span>
+                                                                               </td>
+                                                                      </tr>
+                                                                      <tr>
+                                                                          <td valign="top">
+                                                                              <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                                                                                  <tr>
+                                                                                      <td height="26" colspan="4">
+                                                                                          <span class="blue1">
+                                                                                              <b>
+                                                                                                  一年以上工作经验&nbsp;&nbsp;|&nbsp;&nbsp;男&nbsp;&nbsp;|&nbsp;&nbsp;23岁(1990年2月22日)
+                                                                                                  &nbsp;&nbsp;|&nbsp;&nbsp;183cm&nbsp;&nbsp;|&nbsp;&nbsp;团员
+                                                                                              </b>
+                                                                                          </span>
+                                                                                      </td>
+                                                                                      <td width="17%" rowspan="6" align="center" valign="middle">
+                                                                                          <img style="margin-top:10px;" src="images/1111.jpg" width="90"/>
+                                                                                          <span>
+                                                                                          </span>
+                                                                                      </td>
+                                                                                  </tr>
+                                                                                  <tr>
+                                                                                      <td width="10%" height="20">居住地：</td>
+                                                                                      <td width="42%" height="20">南京-雨花台区</td>
+                                                                                      <td width="11%" height="20">户　口：</td>
+                                                                                      <td width="20%" height="20">连云港</td>
+                                                                                  </tr>
+                                                                                  <tr>
+                                                                                      <td height="20">电　话：</td>
+                                                                                      <td height="20" colspan="3">
+                                                                                          18551740902（手机）
+                                                                                      </td>
+                                                                                  </tr>
+                                                                                  <tr>
+                                                                                      <td height="20">E-mail：</td>
+                                                                                      <td height="20" colspan="3">
+                                                                                          <a href="mailto:ensleep@163.com
+																	   " class="blue1">
+                                                                                              ensleep@163.com
+                                                                                          </a>
+
+                                                                                          <span id="qqstid">
+                                                                                              <img src="http://wpa.qq.com/pa?p=2:
+287058340
+:45" align="absmiddle" />
+                                                                                          </span>
+                                                                                      </td>
+                                                                                  </tr>
+                                                                                  <tr>
+                                                                                      <td height="20">主　页：</td>
+                                                                                      <td height="20" colspan="3">
+                                                                                          <a class="blue" href="http://www.cnblogs.com/ensleep" target="_blank">http://www.cnblogs.com/ensleep</a><br/>
+                                                                                          <a class="blue" href="http://www.ensleep.com/" target="_blank" >http://www.ensleep.com</a>
+                                                                                      </td>
+                                                                                  </tr>
+                                                                              </table>
+                                                                          </td>
+                                                                      </tr>
+                                                                  </tbody>
+                                                              </table>
+                                                              <table width="97%" border="0" align="center" cellpadding="0" cellspacing="0">
+                                                                  <tr>
+                                                                      <td width="45%" colspan="2">
+                                                                          <table width="100%" border="0" cellpadding="0" cellspacing="0" style="margin:8px auto;line-height:22px;padding:0 0 0 8px;">
+                                                                              <tr>
+                                                                                  <td colspan="2">
+                                                                                      <span class="blue" style="font-size:14px;">
+                                                                                          <b>最近工作</b>
+                                                                                      </span>
+                                                                                      <span style="color:#676767;">
+                                                                                          <b>
+                                                                                              [ 6个月]
+                                                                                          </b>
+                                                                                      </span>
+                                                                                  </td>
+                                                                              </tr>
+                                                                              <tr>
+                                                                                  <td width="59">公　司：</td>
+                                                                                  <td width="230">江苏百盛工程咨询有限公司</td>
+                                                                              </tr>
+                                                                              <tr>
+                                                                                  <td>行　业：</td>
+                                                                                  <td>计算机软件</td>
+                                                                              </tr>
+                                                                              <tr>
+                                                                                  <td>职　位：</td>
+                                                                                  <td>软件工程师</td>
+                                                                              </tr>
+                                                                          </table>
+                                                                      </td>
+                                                                      <td width="43" align="center" />
+                                                                      <td width="49%" colspan="2">
+                                                                          <table width="100%" border="0" cellpadding="0" cellspacing="0" style="margin:8px auto;line-height:22px;padding:0 0 0 10px;">
+                                                                              <tr>
+                                                                                  <td colspan="2">
+                                                                                      <span class="blue" style="font-size:14px;">
+                                                                                          <b>最高学历</b>
+                                                                                      </span>
+                                                                                  </td>
+                                                                              </tr>
+                                                                              <tr>
+                                                                                  <td width="59">学　历：</td>
+                                                                                  <td width="230">本科</td>
+                                                                              </tr>
+                                                                              <tr>
+                                                                                  <td>专　业：</td>
+                                                                                  <td>计算机网络</td>
+                                                                              </tr>
+                                                                              <tr>
+                                                                                  <td height="22">学　校：</td>
+                                                                                  <td>盐城工学院</td>
+                                                                              </tr>
+                                                                          </table>
+                                                                      </td>
+                                                                  </tr>
+                                                              </table>
+                                                              <hr />
+                                                              <table width="97%" border="0" align="center" cellpadding="0" cellspacing="0" style="margin:8px auto;line-height:20px;padding:0 0 0 8px;" />
+                                                              <table width="97%" border="0" align="center" cellspacing="0" cellpadding="0">
+                                                                  <tr>
+                                                                      <td align="left" valign="middle" class="cvtitle">自我评价</td>
+                                                                  </tr>
+                                                                  <tr>
+                                                                      <td align="middle" valign="middle" height="4">
+                                                                          <img src="http://img01.51jobcdn.com/im/2009/resumetemplate/line1_1.gif" width="100%" height="4" />
+                                                                      </td>
+                                                                  </tr>
+                                                                  <tr>
+                                                                      <td height="10" align="left" valign="middle" />
+                                                                  </tr>
+                                                                  <tr>
+                                                                      <td id="Cur_Val" valign="top">刚认识我的人都觉得我各方面都能帮助他们，跟我很熟的朋友经常劝我与其朝花暮草，不如专心一个方向，肯定会有所成就。但是，我才是最了解我自己的人，我去了解学习那么多东西，不止是为了更好的前程，更多的是因为我喜欢它们以及强大自己的欲望。
+
+大学期曾做过好多项目，但现在看来都不算什么。在当前的这家公司，维护多个c/s以及b/s系统。其中也独立负责开发两个b/s系统（省水利厅信用信息公开系统、省招投标协会网），完成对水利公共服务平台的前台改版，并且负责日常中对评标系统，交易系统的模块新增以及bug修复。也独立开发多个公司自己使用的c/s工具。
+
+由于对技术的喜爱，自己的开源库中已经有几个开源项目，https://github.com/ensleep，其中包含.net的后台管理通用框架，以html为呈现主体的windows桌面，以及对图形智能识别的测试系统charimage，当然还有其它系统由于通用性不强以及并非自己所有，并未放到github中。
+
+Html,jquery,css等前台十分娴熟，对浏览器之间的兼容性有一定的经验，.net开发b/s,c/s系统经验丰富。喜欢与人做技术交流，团队意识强，能快速清楚地向同事表达或讲解问题。
+</td>
+                                                                  </tr>
+                                                                  <tr>
+                                                                      <td height="10" align="left" valign="middle" />
+                                                                  </tr>
+                                                              </table>
+                                                              <table cellspacing="0" cellpadding="0" width="97%" align="center" border="0">
+                                                                  <tbody>
+                                                                      <tr>
+                                                                          <td class="cvtitle" valign="center" align="left">求职意向</td>
+                                                                      </tr>
+                                                                      <tr>
+                                                                          <td valign="center" align="middle" height="4">
+                                                                              <img height="4" src="http://img01.51jobcdn.com/im/2009/resumetemplate/line1_1.gif" width="100%" style="padding-left: 1px" />
+                                                                          </td>
+                                                                      </tr>
+                                                                      <tr>
+                                                                          <td valign="center" align="left" height="10" />
+                                                                      </tr>
+                                                                      <tr>
+                                                                          <td valign="center" align="left">
+                                                                              <table class="table_set" cellspacing="0" cellpadding="0" width="100%" border="0">
+                                                                                  <tbody>
+                                                                                      <tr>
+                                                                                          <td class="text_left">
+                                                                                              到岗时间：
+
+                                                                                              <span class="text" style="PADDING-LEFT: 10px">待定</span>
+                                                                                          </td>
+                                                                                      </tr>
+                                                                                      <tr>
+                                                                                          <td class="text_left">
+
+                                                                                              工作性质：
+
+                                                                                              <span class="text" style="padding-left:10px;">全职</span>
+                                                                                          </td>
+                                                                                      </tr>
+                                                                                      <tr>
+                                                                                          <td class="text_left">
+
+                                                                                              希望行业：
+
+                                                                                              <span class="text" style="padding-left:10px;">计算机软件</span>
+                                                                                          </td>
+                                                                                      </tr>
+                                                                                      <tr>
+                                                                                          <td class="text_left">
+
+                                                                                              目标地点：
+
+                                                                                              <span class="text" style="padding-left:10px;">南京</span>
+                                                                                          </td>
+                                                                                      </tr>
+                                                                                      <tr>
+                                                                                          <td class="text_left">
+
+                                                                                              期望月薪：
+
+                                                                                              <span class="text" style="padding-left:10px;">面议/月</span>
+                                                                                          </td>
+                                                                                      </tr>
+                                                                                      <tr>
+                                                                                          <td class="text_left">
+
+                                                                                              目标职能：
+
+                                                                                              <span class="text" style="padding-left:10px;">计算机软件，互联网软件开发工程师，多媒体/游戏开发工程师，脚本开发工程师</span>
+                                                                                          </td>
+                                                                                      </tr>
+                                                                                  </tbody>
+                                                                              </table>
+                                                                          </td>
+                                                                      </tr>
+                                                                      <tr>
+                                                                          <td valign="center" align="left" height="20" />
+                                                                      </tr>
+                                                                  </tbody>
+                                                              </table>
+                                                              <table width="97%" border="0" align="center" cellspacing="0" cellpadding="0">
+                                                                  <tr>
+                                                                      <td align="left" valign="middle" class="cvtitle">工作经验</td>
+                                                                  </tr>
+                                                                  <tr>
+                                                                      <td align="middle" valign="middle" height="4">
+                                                                          <img src="http://img01.51jobcdn.com/im/2009/resumetemplate/line1_1.gif" width="100%" height="4" style="padding-left: 1px" />
+                                                                      </td>
+                                                                  </tr>
+                                                                  <tr>
+                                                                      <td height="10" align="left" valign="middle" />
+                                                                  </tr>
+                                                                  <tr>
+                                                                      <td align="left" valign="middle">
+                                                                          <table width="100%" border="0" cellspacing="0" cellpadding="0" class="table_set">
+                                                                              <tr>
+                                                                                  <td colspan="2" class="text_left">
+                                                                                      2013
+                                                                                      /7--至今：江苏百盛工程咨询有限公司（50-150人）
+                                                                                      [ 6个月]
+                                                                                  </td>
+                                                                              </tr>
+                                                                              <tr>
+                                                                                  <td width="22%" class="text_left">所属行业：</td>
+                                                                                  <td width="78%" class="text">计算机软件</td>
+                                                                              </tr>
+                                                                              <tr>
+                                                                                  <td class="text_left">
+                                                                                      <b>研发部</b>
+                                                                                  </td>
+                                                                                  <td class="text">
+                                                                                      <b>软件工程师</b>
+                                                                                  </td>
+                                                                              </tr>
+                                                                              <tr>
+                                                                                  <td id="Cur_Val" colspan="2" valign="top">进行公用协作系统的开发与维护</td>
+                                                                              </tr>
+                                                                              <tr>
+                                                                                  <td colspan="2" align="center" valign="middle">
+                                                                                      <hr size="1" noshade="noshade" />
+                                                                                  </td>
+                                                                              </tr>
+                                                                              <tr>
+                                                                                  <td colspan="2" class="text_left">
+                                                                                      2012
+                                                                                      /1--2013
+                                                                                      /4：南京佳力实通信科技有限公司（少于50人）
+                                                                                      [ 1年3个月]
+                                                                                  </td>
+                                                                              </tr>
+                                                                              <tr>
+                                                                                  <td width="22%" class="text_left">所属行业：</td>
+                                                                                  <td width="78%" class="text">通信/电信/网络设备</td>
+                                                                              </tr>
+                                                                              <tr>
+                                                                                  <td class="text_left">
+                                                                                      <b>开发</b>
+                                                                                  </td>
+                                                                                  <td class="text">
+                                                                                      <b>软件工程师</b>
+                                                                                  </td>
+                                                                              </tr>
+                                                                              <tr>
+                                                                                  <td id="Cur_Val" colspan="2" valign="top">搭建交叉编译环境，进行系统移植，对开源项目进行研究裁剪，调试网络。</td>
+                                                                              </tr>
+                                                                          </table>
+                                                                      </td>
+                                                                  </tr>
+                                                                  <tr>
+                                                                      <td height="20" align="left" valign="middle" />
+                                                                  </tr>
+                                                                  <tr>
+                                                                      <td align="left" valign="middle" class="cvtitle">项目经验</td>
+                                                                  </tr>
+                                                                  <tr>
+                                                                      <td align="middle" valign="middle" height="4">
+                                                                          <img src="http://img01.51jobcdn.com/im/2009/resumetemplate/line1_1.gif" width="100%" height="4" style="padding-left: 1px" />
+                                                                      </td>
+                                                                  </tr>
+                                                                  <tr>
+                                                                      <td height="10" align="left" valign="middle" />
+                                                                  </tr>
+                                                                  <tr>
+                                                                      <td align="left" valign="middle">
+                                                                          <table width="100%" border="0" cellspacing="0" cellpadding="0" class="table_set">
+                                                                              <tr>
+                                                                                  <td colspan="2" class="text_left">
+                                                                                      2012
+                                                                                      /9--至今：盐城某公司项目管理系统（APMS）
+                                                                                  </td>
+                                                                              </tr>
+                                                                              <tr>
+                                                                                  <td class="text_left" valign="top">软件环境：</td>
+                                                                                  <td class="text">windows+dreamwaver+myeclipse+wampserver</td>
+                                                                              </tr>
+                                                                              <tr>
+                                                                                  <td class="text_left" valign="top"> 硬件环境：</td>
+                                                                                  <td class="text">个人PC</td>
+                                                                              </tr>
+                                                                              <tr>
+                                                                                  <td class="text_left" valign="top"> 开发工具：</td>
+                                                                                  <td class="text">SSH+WEB前台（使用html5 css3)</td>
+                                                                              </tr>
+                                                                              <tr>
+                                                                                  <td width="16%" class="text_left" valign="top">项目描述：</td>
+                                                                                  <td width="84%" id="Cur_Val" valign="top">为此公司所从事的业务提供信息化支持及管理，使得组员、组长等角色之间快速调动和作，管理层人员可方便查询员工工作记录。用BS模式。</td>
+                                                                              </tr>
+                                                                              <tr>
+                                                                                  <td class="text_left" valign="top">责任描述：</td>
+                                                                                  <td id="Cur_Val" valign="top">本人主要做业务分析，前台功能设计，操作需求分析以及后台具体代码实现。</td>
+                                                                              </tr>
+                                                                              <tr>
+                                                                                  <td colspan="2" align="center" valign="middle">
+                                                                                      <hr size="1" noshade="noshade" />
+                                                                                  </td>
+                                                                              </tr>
+                                                                              <tr>
+                                                                                  <td colspan="2" class="text_left">
+                                                                                      2012
+                                                                                      /8--2012
+                                                                                      /9：艺欧公司自动窗帘控制器
+                                                                                  </td>
+                                                                              </tr>
+                                                                              <tr>
+                                                                                  <td class="text_left" valign="top">软件环境：</td>
+                                                                                  <td class="text">protel</td>
+                                                                              </tr>
+                                                                              <tr>
+                                                                                  <td class="text_left" valign="top"> 硬件环境：</td>
+                                                                                  <td class="text">个人PC</td>
+                                                                              </tr>
+                                                                              <tr>
+                                                                                  <td class="text_left" valign="top"> 开发工具：</td>
+                                                                                  <td class="text">at89c51环境</td>
+                                                                              </tr>
+                                                                              <tr>
+                                                                                  <td width="16%" class="text_left" valign="top">项目描述：</td>
+                                                                                  <td width="84%" id="Cur_Val" valign="top">负责设计（系统、代码、电路的仿真设计及布局）一款自动智能开关窗帘控制器，有断电保护等记忆功能。</td>
+                                                                              </tr>
+                                                                              <tr>
+                                                                                  <td class="text_left" valign="top">责任描述：</td>
+                                                                                  <td id="Cur_Val" valign="top">单独开发</td>
+                                                                              </tr>
+                                                                              <tr>
+                                                                                  <td colspan="2" align="center" valign="middle">
+                                                                                      <hr size="1" noshade="noshade" />
+                                                                                  </td>
+                                                                              </tr>
+                                                                              <tr>
+                                                                                  <td colspan="2" class="text_left">
+                                                                                      2012
+                                                                                      /2--2012
+                                                                                      /10：一款基于地理位置的交友聊天室移动应用
+                                                                                  </td>
+                                                                              </tr>
+                                                                              <tr>
+                                                                                  <td class="text_left" valign="top">软件环境：</td>
+                                                                                  <td class="text">windows</td>
+                                                                              </tr>
+                                                                              <tr>
+                                                                                  <td class="text_left" valign="top"> 硬件环境：</td>
+                                                                                  <td class="text">个人笔记本</td>
+                                                                              </tr>
+                                                                              <tr>
+                                                                                  <td class="text_left" valign="top"> 开发工具：</td>
+                                                                                  <td class="text">eclipse+android sdk</td>
+                                                                              </tr>
+                                                                              <tr>
+                                                                                  <td width="16%" class="text_left" valign="top">项目描述：</td>
+                                                                                  <td width="84%" id="Cur_Val" valign="top">与研发团队共同开发一款基于地理位置的交友聊天室移动应用，目标平台为安卓。</td>
+                                                                              </tr>
+                                                                              <tr>
+                                                                                  <td class="text_left" valign="top">责任描述：</td>
+                                                                                  <td id="Cur_Val" valign="top">负责编码</td>
+                                                                              </tr>
+                                                                              <tr>
+                                                                                  <td colspan="2" align="center" valign="middle">
+                                                                                      <hr size="1" noshade="noshade" />
+                                                                                  </td>
+                                                                              </tr>
+                                                                              <tr>
+                                                                                  <td colspan="2" class="text_left">
+                                                                                      2011
+                                                                                      /6--2011
+                                                                                      /9：基于地理定位的第三方服务
+                                                                                  </td>
+                                                                              </tr>
+                                                                              <tr>
+                                                                                  <td class="text_left" valign="top">软件环境：</td>
+                                                                                  <td class="text">windows,wampserver,dreamwaver</td>
+                                                                              </tr>
+                                                                              <tr>
+                                                                                  <td class="text_left" valign="top"> 硬件环境：</td>
+                                                                                  <td class="text">个人笔记本</td>
+                                                                              </tr>
+                                                                              <tr>
+                                                                                  <td class="text_left" valign="top"> 开发工具：</td>
+                                                                                  <td class="text">php,css,html,mysql,ps,js等</td>
+                                                                              </tr>
+                                                                              <tr>
+                                                                                  <td width="16%" class="text_left" valign="top">项目描述：</td>
+                                                                                  <td width="84%" id="Cur_Val" valign="top">作为一个LBS项目，web应用，本着从创业角度出发进行设计，应用直接在浏览器里面登陆，操作。它以盐城工学院新校区的地图为模型，外加sns功能栏，可以根据chrome和firefox中的位置信息定位用户所在地，用户也可以自己选择自己所在地，精确选择到图书馆，教室，宿舍。用户及商家可以在自己当前所在位置发部信息，并且会显示在地图上面，其好友以及选择了接收全地图信息的用户就可以在自己的地图上面看到他们发出的信息。并且用户可以在网页上面互相聊天，类似于webQQ，观看和评论状态。</td>
+                                                                              </tr>
+                                                                              <tr>
+                                                                                  <td class="text_left" valign="top">责任描述：</td>
+                                                                                  <td id="Cur_Val" valign="top">本人负责代码的编写，主要是负责了javascript的前台动画，以及前台部分按钮的绘制。</td>
+                                                                              </tr>
+                                                                          </table>
+                                                                      </td>
+                                                                  </tr>
+                                                                  <tr>
+                                                                      <td height="20" align="left" valign="middle" />
+                                                                  </tr>
+                                                                  <tr>
+                                                                      <td align="left" valign="middle" class="cvtitle">教育经历</td>
+                                                                  </tr>
+                                                                  <tr>
+                                                                      <td align="middle" valign="middle" height="4">
+                                                                          <img src="http://img01.51jobcdn.com/im/2009/resumetemplate/line1_1.gif" width="100%" height="4" style="padding-left: 1px" />
+                                                                      </td>
+                                                                  </tr>
+                                                                  <tr>
+                                                                      <td height="10" align="left" valign="middle" />
+                                                                  </tr>
+                                                                  <tr>
+                                                                      <td align="left" valign="middle">
+                                                                          <table width="100%" border="0" cellspacing="0" cellpadding="0" class="table_set">
+                                                                              <tr>
+                                                                                  <td width="26%" class="text_left">
+                                                                                      2009
+                                                                                      /11--至今
+                                                                                  </td>
+                                                                                  <td width="30%" class="text">盐城工学院</td>
+                                                                                  <td width="30%" class="text">计算机网络</td>
+                                                                                  <td width="14%" class="text">本科</td>
+                                                                              </tr>
+                                                                              <tr>
+                                                                                  <td id="Cur_Val" colspan="4" valign="top" height="30">
+                                                                                      数据结构、操作系统、计算机组成原理、微机通信与接口、嵌入式；
+                                                                                      <br>C、C++、JAVA、C#.NET、ASP.NET、JSP、MSSQL、汇编;
+                                                                                  </td>
+                                                                              </tr>
+                                                                          </table>
+                                                                      </td>
+                                                                  </tr>
+                                                                  <tr>
+                                                                      <td height="20" align="left" valign="middle" />
+                                                                  </tr>
+                                                                  <tr>
+                                                                      <td align="left" valign="middle" class="cvtitle">所获奖项</td>
+                                                                  </tr>
+                                                                  <tr>
+                                                                      <td align="middle" valign="middle" height="4">
+                                                                          <img src="http://img01.51jobcdn.com/im/2009/resumetemplate/line1_1.gif" width="100%" height="4" style="padding-left: 1px" />
+                                                                      </td>
+                                                                  </tr>
+                                                                  <tr>
+                                                                      <td height="10" align="left" valign="middle" />
+                                                                  </tr>
+                                                                  <tr>
+                                                                      <td height="20" align="left" valign="middle">
+                                                                          <table width="100%" border="0" cellspacing="0" cellpadding="0" class="table_set">
+                                                                              <tr>
+                                                                                  <td width="33%" class="text_left">
+                                                                                      2013
+                                                                                      /6
+                                                                                  </td>
+                                                                                  <td width="33%" class="text">毕业生优秀毕业设计</td>
+                                                                                  <td width="33%" class="text" />
+                                                                              </tr>
+                                                                              <tr align="left">
+                                                                                  <td colspan="3" valign="top">
+                                                                                      <hr size="1" noshade="noshade" />
+                                                                                  </td>
+                                                                              </tr>
+                                                                              <tr>
+                                                                                  <td width="33%" class="text_left">
+                                                                                      2011
+                                                                                      /12
+                                                                                  </td>
+                                                                                  <td width="33%" class="text">大学生省多媒体竞赛网站制作优秀奖</td>
+                                                                                  <td width="33%" class="text" />
+                                                                              </tr>
+                                                                              <tr align="left">
+                                                                                  <td colspan="3" valign="top">
+                                                                                      <hr size="1" noshade="noshade" />
+                                                                                  </td>
+                                                                              </tr>
+                                                                              <tr>
+                                                                                  <td width="33%" class="text_left">
+                                                                                      2011
+                                                                                      /6
+                                                                                  </td>
+                                                                                  <td width="33%" class="text">校大学生程序竞赛二等奖</td>
+                                                                                  <td width="33%" class="text" />
+                                                                              </tr>
+                                                                              <tr align="left">
+                                                                                  <td colspan="3" valign="top">
+                                                                                      <hr size="1" noshade="noshade" />
+                                                                                  </td>
+                                                                              </tr>
+                                                                              <tr>
+                                                                                  <td width="33%" class="text_left">
+                                                                                      2010
+                                                                                      /2
+                                                                                  </td>
+                                                                                  <td width="33%" class="text">社团联合会优秀干事</td>
+                                                                                  <td width="33%" class="text" />
+                                                                              </tr>
+                                                                              <tr align="left">
+                                                                                  <td colspan="3" valign="top">
+                                                                                      <hr size="1" noshade="noshade" />
+                                                                                  </td>
+                                                                              </tr>
+                                                                              <tr>
+                                                                                  <td width="33%" class="text_left">
+                                                                                      2009
+                                                                                      /12
+                                                                                  </td>
+                                                                                  <td width="33%" class="text">大学生全校作文大赛二等奖</td>
+                                                                                  <td width="33%" class="text" />
+                                                                              </tr>
+                                                                          </table>
+                                                                      </td>
+                                                                  </tr>
+                                                                  <tr>
+                                                                      <td height="20" align="left" valign="middle" />
+                                                                  </tr>
+                                                                  <tr>
+                                                                      <td align="left" valign="middle" class="cvtitle">社会经验</td>
+                                                                  </tr>
+                                                                  <tr>
+                                                                      <td align="middle" valign="middle" height="4">
+                                                                          <img src="http://img01.51jobcdn.com/im/2009/resumetemplate/line1_1.gif" width="100%" height="4" style="padding-left: 1px" />
+                                                                      </td>
+                                                                  </tr>
+                                                                  <tr>
+                                                                      <td height="10" align="left" valign="middle" />
+                                                                  </tr>
+                                                                  <tr>
+                                                                      <td height="20" align="left" valign="middle">
+                                                                          <table width="100%" border="0" cellspacing="0" cellpadding="0" class="table_set">
+                                                                              <tr>
+                                                                                  <td width="25%" class="text_left">
+                                                                                      2013
+                                                                                      /5--2013
+                                                                                      /6
+                                                                                  </td>
+                                                                                  <td class="text">.net mvc4开的基于web的校友录</td>
+                                                                              </tr>
+                                                                              <tr>
+                                                                                  <td colspan="2" id="Cur_Val" valign="top">以老师给的“基于web的校友录的设计与实现”为载体，对.net mvc4+entity framework进行尝试与学习。实现了系统的全部功能外加在线聊天室，拿到了优秀毕业设计奖。</td>
+                                                                              </tr>
+                                                                              <tr>
+                                                                                  <td colspan="2" align="center" valign="middle">
+                                                                                      <hr size="1" noshade="noshade" />
+                                                                                  </td>
+                                                                              </tr>
+                                                                              <tr>
+                                                                                  <td width="25%" class="text_left">
+                                                                                      2010
+                                                                                      /9--至今
+                                                                                  </td>
+                                                                                  <td class="text">参加系老师组织成立的物联网研发项目工作小组</td>
+                                                                              </tr>
+                                                                              <tr>
+                                                                                  <td colspan="2" id="Cur_Val" valign="top">在老师的指导下，负责对九种流行传感器网络的路由算法及传输算法进行matlab仿真测试（matlab是在老师的指导下进行自学）</td>
+                                                                              </tr>
+                                                                          </table>
+                                                                      </td>
+                                                                  </tr>
+                                                                  <tr>
+                                                                      <td height="20" align="left" valign="middle" />
+                                                                  </tr>
+                                                                  <tr>
+                                                                      <td align="left" valign="middle" class="cvtitle">校内职务</td>
+                                                                  </tr>
+                                                                  <tr>
+                                                                      <td align="middle" valign="middle" height="4">
+                                                                          <img src="http://img01.51jobcdn.com/im/2009/resumetemplate/line1_1.gif" width="100%" height="4" style="padding-left: 1px" />
+                                                                      </td>
+                                                                  </tr>
+                                                                  <tr>
+                                                                      <td height="10" align="left" valign="middle" />
+                                                                  </tr>
+                                                                  <tr>
+                                                                      <td height="20" align="left" valign="middle">
+                                                                          <table width="100%" border="0" cellspacing="0" cellpadding="0" class="table_set">
+                                                                              <tr>
+                                                                                  <td width="25%" class="text_left">
+                                                                                      2009
+                                                                                      /11--2010
+                                                                                      /10
+                                                                                  </td>
+                                                                                  <td class="text">大学生社团联合会干事</td>
+                                                                              </tr>
+                                                                              <tr>
+                                                                                  <td colspan="2" id="Cur_Val" valign="top">直属校团委，管理学校所有的社团，进行统一规划，年末评分，对社团成立予以审批，将各大社团联合起来组织大型活动。</td>
+                                                                              </tr>
+                                                                              <tr>
+                                                                                  <td colspan="2" align="center" valign="middle">
+                                                                                      <hr size="1" noshade="noshade" />
+                                                                                  </td>
+                                                                              </tr>
+                                                                              <tr>
+                                                                                  <td width="25%" class="text_left">
+                                                                                      2009
+                                                                                      /11--2010
+                                                                                      /10
+                                                                                  </td>
+                                                                                  <td class="text">学生自律委员会干事</td>
+                                                                              </tr>
+                                                                              <tr>
+                                                                                  <td colspan="2" id="Cur_Val" valign="top">负责每天晚上检查学生的晚归情况，每周检查学生的宿舍卫生情况。</td>
+                                                                              </tr>
+                                                                          </table>
+                                                                      </td>
+                                                                  </tr>
+                                                                  <tr>
+                                                                      <td height="20" align="left" valign="middle" />
+                                                                  </tr>
+                                                                  <tr>
+                                                                      <td align="left" valign="middle" class="cvtitle">语言能力</td>
+                                                                  </tr>
+                                                                  <tr>
+                                                                      <td align="middle" valign="middle" height="4">
+                                                                          <img src="http://img01.51jobcdn.com/im/2009/resumetemplate/line1_1.gif" width="100%" height="4" style="padding-left: 1px" />
+                                                                      </td>
+                                                                  </tr>
+                                                                  <tr>
+                                                                      <td height="10" align="left" valign="middle" />
+                                                                  </tr>
+                                                                  <tr>
+                                                                      <td align="left" valign="middle">
+                                                                          <table border="0" cellspacing="0" cellpadding="0" style="width:100%">
+                                                                              <tr>
+                                                                                  <td style="width:85%">
+                                                                                      <table width="100%" border="0" cellspacing="0" cellpadding="0" class="table_set">
+                                                                                          <tr>
+                                                                                              <td width="130" class="text_left">英语等级：</td>
+                                                                                              <td class="text">英语四级</td>
+                                                                                          </tr>
+                                                                                      </table>
+                                                                                  </td>
+                                                                              </tr>
+                                                                          </table>
+                                                                      </td>
+                                                                  </tr>
+                                                                  <tr>
+                                                                      <td height="20" align="left" valign="middle" />
+                                                                  </tr>
+                                                                  <tr>
+                                                                      <td align="left" valign="middle" class="cvtitle">IT    技能</td>
+                                                                  </tr>
+                                                                  <tr>
+                                                                      <td align="middle" valign="middle" height="4">
+                                                                          <img src="http://img01.51jobcdn.com/im/2009/resumetemplate/line1_1.gif" width="100%" height="4" style="padding-left: 1px" />
+                                                                      </td>
+                                                                  </tr>
+                                                                  <tr>
+                                                                      <td height="10" align="left" valign="middle" />
+                                                                  </tr>
+                                                                  <tr>
+                                                                      <td align="left" valign="middle">
+                                                                          <table width="100%" border="0" cellspacing="0" cellpadding="0" class="table_set">
+                                                                              <tr>
+                                                                                  <td width="30%" class="text_left">技能名称</td>
+                                                                                  <td width="30%" class="text">熟练程度</td>
+                                                                                  <td width="25%" class="text">使用时间</td>
+                                                                                  <td width="15%" class="text" />
+                                                                              </tr>
+                                                                              <tr>
+                                                                                  <td colspan="4" align="center" valign="middle">
+                                                                                      <hr size="1" noshade="noshade" />
+                                                                                  </td>
+                                                                              </tr>
+                                                                              <tr>
+                                                                                  <td class="text_left">J2EE</td>
+                                                                                  <td class="text">一般</td>
+                                                                                  <td class="text">
+                                                                                      20月
+                                                                                  </td>
+                                                                                  <td rowspan="19">&nbsp;</td>
+                                                                              </tr>
+                                                                              <tr>
+                                                                                  <td class="text_left">Photoshop</td>
+                                                                                  <td class="text">一般</td>
+                                                                                  <td class="text">
+                                                                                      40月
+                                                                                  </td>
+                                                                              </tr>
+                                                                              <tr>
+                                                                                  <td class="text_left">Dreamweaver</td>
+                                                                                  <td class="text">熟练</td>
+                                                                                  <td class="text">
+                                                                                      40月
+                                                                                  </td>
+                                                                              </tr>
+                                                                              <tr>
+                                                                                  <td class="text_left">Visio</td>
+                                                                                  <td class="text">熟练</td>
+                                                                                  <td class="text">
+                                                                                      18月
+                                                                                  </td>
+                                                                              </tr>
+                                                                              <tr>
+                                                                                  <td class="text_left">SQL</td>
+                                                                                  <td class="text">熟练</td>
+                                                                                  <td class="text">
+                                                                                      30月
+                                                                                  </td>
+                                                                              </tr>
+                                                                              <tr>
+                                                                                  <td class="text_left">Illustrator</td>
+                                                                                  <td class="text">一般</td>
+                                                                                  <td class="text">
+                                                                                      3月
+                                                                                  </td>
+                                                                              </tr>
+                                                                              <tr>
+                                                                                  <td class="text_left">MS Excel</td>
+                                                                                  <td class="text">熟练</td>
+                                                                                  <td class="text">
+                                                                                      70月
+                                                                                  </td>
+                                                                              </tr>
+                                                                              <tr>
+                                                                                  <td class="text_left">C/C++</td>
+                                                                                  <td class="text">熟练</td>
+                                                                                  <td class="text">
+                                                                                      30月
+                                                                                  </td>
+                                                                              </tr>
+                                                                              <tr>
+                                                                                  <td class="text_left">Java</td>
+                                                                                  <td class="text">熟练</td>
+                                                                                  <td class="text">
+                                                                                      40月
+                                                                                  </td>
+                                                                              </tr>
+                                                                              <tr>
+                                                                                  <td class="text_left">JavaScript</td>
+                                                                                  <td class="text">熟练</td>
+                                                                                  <td class="text">
+                                                                                      12月
+                                                                                  </td>
+                                                                              </tr>
+                                                                              <tr>
+                                                                                  <td class="text_left">PHP</td>
+                                                                                  <td class="text">熟练</td>
+                                                                                  <td class="text">
+                                                                                      12月
+                                                                                  </td>
+                                                                              </tr>
+                                                                              <tr>
+                                                                                  <td class="text_left">JSP</td>
+                                                                                  <td class="text">熟练</td>
+                                                                                  <td class="text">
+                                                                                      20月
+                                                                                  </td>
+                                                                              </tr>
+                                                                              <tr>
+                                                                                  <td class="text_left">PowerPoint</td>
+                                                                                  <td class="text">熟练</td>
+                                                                                  <td class="text">
+                                                                                      70月
+                                                                                  </td>
+                                                                              </tr>
+                                                                              <tr>
+                                                                                  <td class="text_left">C#</td>
+                                                                                  <td class="text">熟练</td>
+                                                                                  <td class="text">
+                                                                                      15月
+                                                                                  </td>
+                                                                              </tr>
+                                                                              <tr>
+                                                                                  <td class="text_left">HTML</td>
+                                                                                  <td class="text">熟练</td>
+                                                                                  <td class="text">
+                                                                                      70月
+                                                                                  </td>
+                                                                              </tr>
+                                                                              <tr>
+                                                                                  <td class="text_left">XML</td>
+                                                                                  <td class="text">熟练</td>
+                                                                                  <td class="text">
+                                                                                      12月
+                                                                                  </td>
+                                                                              </tr>
+                                                                              <tr>
+                                                                                  <td class="text_left">SQL Server</td>
+                                                                                  <td class="text">熟练</td>
+                                                                                  <td class="text">
+                                                                                      20月
+                                                                                  </td>
+                                                                              </tr>
+                                                                              <tr>
+                                                                                  <td class="text_left">CSS</td>
+                                                                                  <td class="text">熟练</td>
+                                                                                  <td class="text">
+                                                                                      12月
+                                                                                  </td>
+                                                                              </tr>
+                                                                              <tr>
+                                                                                  <td class="text_left">.NET</td>
+                                                                                  <td class="text">熟练</td>
+                                                                                  <td class="text">
+                                                                                      15月
+                                                                                  </td>
+                                                                              </tr>
+                                                                          </table>
+                                                                      </td>
+                                                                  </tr>
+                                                                  <tr>
+                                                                      <td height="20" align="left" valign="middle" />
+                                                                  </tr>
+                                                              </table>
+                                                          </td>
+                                                      </tr>
+                                                  </tbody>
+                                              </table>
+                                          </td>
+                                      </tr>
+                                      <tr style="HEIGHT: 10px">
+                                          <td style="HEIGHT: 10px" colspan="2" />
+                                      </tr>
+                                      <tr>
+                                          <td style="WIDTH: 100%; HEIGHT: 20px" align="middle" colspan="2" />
+                                      </tr>
+                                  </tbody>
+                              </table>
+                          </td>
+                      </tr>
+                  </table>
+
+          </div>
+      </div>
+      <div class="grid_2" style="height:10px;">
+
+      </div>
+  </div>
+</div>
+
+<!--==============================footer=================================-->
+
+<footer>    
+  <div class="container_12">
+    <div class="grid_12">
+    <div class="socials">
+      <a href="#"></a>
+      <a href="#"></a>
+      <a href="#"></a>
+      <a href="#"></a>
+    </div>
+      <div class="copy">
+      <a href="#">如果，我只是说如果，如果我一觉醒来，趴在小学的课桌上。。。</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
